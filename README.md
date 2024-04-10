@@ -1,4 +1,4 @@
-#Ideal OR Diode
+# Ideal OR Diode
 
 In realms where reliability reigns supreme,
 Systems of high avail strive to dream,
