@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: ghcr.io/inti-cmnb/kicad8_auto_full:dev
+    - uses: INTI-CMNB/KiBot@v2_k8
       with:
         config: hardware/jlcpcb_gerbers.kibot.yml
         dir: production 
