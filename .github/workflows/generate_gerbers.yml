@@ -3,7 +3,7 @@ name: Generate Gerber files
 on:
   push:
     paths:
-    - '**.sch'
+    - '**.kicad_sch'
     - '**.kicad_pcb'
     - '.github/**.yml'
     - '**.kibot.yml'
