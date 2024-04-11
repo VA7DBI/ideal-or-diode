@@ -19,19 +19,18 @@ on:
         description: 'Workflow run name'
         required: false
         default: 'Manual test run'
+
 jobs:
   production:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: INTI-CMNB/KiBot@v2_k8
       with:
         config: hardware/jlcpcb_gerbers.kibot.yml
         dir: production 
-        schema: 'hardware/*.kicad_sch'
-        board: 'hardware/*.kicad_pcb'
     - name: upload results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: production
         path: production
