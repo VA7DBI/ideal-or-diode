@@ -28,7 +28,9 @@ jobs:
     - uses: INTI-CMNB/KiBot@v2_k8
       with:
         config: hardware/jlcpcb_gerbers.kibot.yml
-        dir: production 
+        dir: production
+        schema: hardware/*.kicad_sch
+        board: hardware/*.kicad_pcb
     - name: upload results
       uses: actions/upload-artifact@v4
       with:
