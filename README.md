@@ -28,7 +28,7 @@ A tale of progress, a poetic grace.
 
 ## Summary
 
-This Ideal OO Diode circuit is designed to protect a 12V nominal (5-15) supply at 50A.
+This Ideal OR Diode circuit is designed to protect a 12V nominal (5-15) supply at 50A.
 
 ### Images
 ![top](VA7DBI.github.io/ideal-or-diode/top.png)
