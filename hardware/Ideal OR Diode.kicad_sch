@@ -3,7 +3,14 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "c831aa07-d23e-4f0e-9850-d018cbdf2855")
-	(paper "A4")
+	(paper "USLetter")
+	(title_block
+		(title "Ideal OR Diode")
+		(date "2024-04-11")
+		(rev "1.0")
+		(company "VA7DBI")
+		(comment 1 "http://github.com/VA7DBI/ideal-or-diode")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names

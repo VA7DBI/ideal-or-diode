@@ -6,7 +6,14 @@
 		(thickness 1.6)
 		(legacy_teardrops no)
 	)
-	(paper "A4")
+	(paper "USLetter")
+	(title_block
+		(title "Ideal OR Diode")
+		(date "2024-04-11")
+		(rev "1.0")
+		(company "VA7DBI")
+		(comment 1 "http://github.com/VA7DBI/ideal-or-diode")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
