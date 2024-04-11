@@ -31,5 +31,5 @@ A tale of progress, a poetic grace.
 This Ideal OR Diode circuit is designed to protect a 12V nominal (5-15) supply at 50A.
 
 ### Images
-![top](VA7DBI.github.io/ideal-or-diode/top.png)
-![bottom](VA7DBI.github.io/ideal-or-diode/bottom.png)
+![top](https://va7dbi.github.io/ideal-or-diode/top.png)
+![bottom](https://VA7DBI.github.io/ideal-or-diode/bottom.png)
