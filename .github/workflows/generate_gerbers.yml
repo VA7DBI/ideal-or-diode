@@ -1,0 +1,37 @@
+name: Generate Gerber files
+
+on:
+  push:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+    - '.github/**.yml'
+    - '**.kibot.yml'
+  pull_request:
+    paths:
+    - '**.kicad_sch'
+    - '**.kicad_pcb'
+    - '.github/**.yml'
+    - '**.kibot.yml'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Workflow run name'
+        required: false
+        default: 'Manual test run'
+jobs:
+  production:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ghcr.io/inti-cmnb/kicad8_auto_full:dev
+      with:
+        config: hardware/jlcpcb_gerbers.kibot.yml
+        dir: production 
+        schema: 'hardware/*.kicad_sch'
+        board: 'hardware/*.kicad_pcb'
+    - name: upload results
+      uses: actions/upload-artifact@v2
+      with:
+        name: production
+        path: production
